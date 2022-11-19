@@ -1,0 +1,18 @@
+https://drive.google.com/file/d/18RuNdvdFMqYyWI7OUls-rJgV5FiktNTw/view?usp=sharing
+The pictorial reference to this writing is in the above link.
+
+Continuation from task 0:
+
+An extra web server: An extra web server is added to the previous infrastructure so that there is redundancy with the added server.
+
+Load Balancer: This is added to distribute the traffic between the two servers
+
+Load balancer configuration: This load balancer is configured to have an active-active setup to both servers so as to offer more capacity.
+
+Database Primary-Replica: The MySQL Master-Replica cluster used replication to keep data synchronized. This master-slave replication system prevents any downtime as the slave (which is a constant live backup of the database) can always be promoted to master if the original master server crashes.
+
+PROBLEMS WITH THIS INFRASTRUCTURE:
+
+SINGLE POINT OF FAILURE(SPOF): The load balancer is still a single point of failure because if it crashes, the application also crashes.
+LACK OF SECURITY: There are no firewalls on the servers which could allow easy entrance of threats. The traffic is also unencrypted.
+NO MONITORING

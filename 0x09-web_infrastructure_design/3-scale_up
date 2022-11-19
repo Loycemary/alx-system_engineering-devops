@@ -1,0 +1,6 @@
+https://drive.google.com/file/d/1nDqMOk1ZXDhoZ8PPIwc5AKZwDc0GcT5g/view?usp=sharing
+The pictorial reference to this writing is in the above link.
+
+Continuation from task 2:
+
+Another Load Balancer: A new load balancer is added and configured as a cluster so that if one fails, the other takes over.

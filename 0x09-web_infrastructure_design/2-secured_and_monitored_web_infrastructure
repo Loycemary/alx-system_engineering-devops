@@ -1,0 +1,15 @@
+https://drive.google.com/file/d/1pO7KK9szTlrtyMI-eJ3mCFW1pThr9s79/view?usp=sharing
+The pictorial reference to this writing is in the above link.
+
+Continuation from task 1:
+
+FIREWALLS: these are included to filter network traffic in and out of the servers.
+
+SSL CERTIFICATE: HTTPS is setup so that if someone intercepts the traffic, it cannot be read
+
+MONITORING: This is done to ensure optimum functionalities of the servers and to check if something is slow or broken. This is usually Configured to collect web server data and have an alert triggered if QPS is getting out of control.
+
+PROBLEMS WITH THIS INFRASTRUCTURE:
+Having only one MySQL server capable of accepting writes is an issue because if the master goes down, the application cannot write to the database anymore.
+Having servers with all the same components (database, web server and application server) might be a problem because their consumption will not grow the same way between each of them (we might want to have more database servers than application servers for instance).
+Having servers with all the same components (database, web server and application server) might be a problem because when there is maintenance performed on a server for a specific component, it will affect other components that are on it

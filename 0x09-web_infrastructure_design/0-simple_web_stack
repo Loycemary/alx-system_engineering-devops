@@ -1,0 +1,23 @@
+https://drive.google.com/file/d/15qDKtxPV7dpATYNObc2FP4Dv79gS3MwM/view?usp=sharing
+The pictorial reference to this writing is in the above link.
+
+DNS:
+The main role of the DNS is to translate the record of a domain name(www.foobar.com) into an IP address (8.8.8.8).
+The website ‘www.foobar.com’ is an A record because it resolves to an IP address(IPV4), 8.8.8.8.
+
+SERVER:
+A server is generally located in a data center which is a specially designed structure to hold thousands of machines.
+It can be physical or virtual.
+The server also runs a special kind of operating system that helps it to perform its services to the end users.
+The server here uses the TCP/IP protocol to communicate with the computer of the user requesting the website.
+
+WEB SERVER: In this context, an NGINX web server is installed and its primary purpose is to serve hard-coded content, that is, web pages with static content.
+
+APPLICATION SERVER: An application server’s main purpose is to process web server’s requests and serve dynamic web contents.
+
+DATABASE: The database is where information is stored and can be retrieved when the web server sends a request to the application server.
+
+PROBLEMS WITH THIS INFRASTRUCTURE:
+SINGLE POINT OF FAILURE(SPOF): the server is a Single Point of Failure because the infrastructure design has no backup server if the present server ever fails. The application would crash if there is any malfunctioning of the server.
+MAINTENANCE DOWNTIME: In a situation where a new code is deployed and the server needs to be rebooted, this would cause a downtime as the only server would be unavailable for that period to carry out its functionalities to the clients.
+This infrastructure is unscalable because it has one server, no load balancer to handle multiple requests to it.
